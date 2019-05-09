@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="CORP\anwo4" GeneratedFromPackageName="Package" GeneratedFromPackageID="{AC6F9D88-C11A-4981-B313-71666CC24090}" GeneratedDate="02/05/2019 12:01:35"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SevenZipLocation].Properties[Value]" ValueType="String">
+		<ConfiguredValue>c:\program files\7-Zip\7z.exe</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SourceZip].Properties[Value]" ValueType="String">
+		<ConfiguredValue>ncdr.zip</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::WorkingDirectory].Properties[Value]" ValueType="String">
+		<ConfiguredValue>d:\data\test\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

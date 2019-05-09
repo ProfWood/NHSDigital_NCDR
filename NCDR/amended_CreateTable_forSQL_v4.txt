@@ -1,0 +1,171 @@
+CREATE TABLE mhsds.MHS511AbsenceWithoutLeave (
+AWOLDaysEndRP bigint, EndDateMHAbsWOLeave date, EndTimeMHAbsWOLeave time, MHAbsWOLeaveEndReason varchar(max), MHS511UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateMHAbsWOLeave date, StartTimeMHAbsWOLeave time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS003AccommStatus (
+AccommodationStatusCode varchar(max), AccommodationStatusDate date, AgeAccomStatusDate bigint, LocalPatientId varchar(max), MHS003UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, SCHPlacementType varchar(max), SettledAccommodationInd varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS608AnonSelfAssess (
+ActLocTypeCode varchar(max), AssToolCompDate date, CodedAssToolType varchar(max), MHS608UniqID bigint, OrgIDComm varchar(max), OrgIDProv varchar(max), PersScore varchar(max),  RowNumber bigint, UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS506Assault (
+DateAssault date, MHS506UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS503AssignedCareProf (
+CareProfLocalId varchar(max), EndDateAssCareProf date, HospProvSpellNum varchar(max), MHS503UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateAssCareProf date, TreatFuncCodeMH varchar(max), UniqCareProfLocalID varchar(max), UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS010AssTechToSupportDisTyp (
+AssistiveTechnologyFinding varchar(max), AssistiveTechnologyPrescDate date, LocalPatientId varchar(max), MHS010UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS202CareActivity (
+CareActId varchar(max), CareContactId varchar(max), CareProfLocalId varchar(max), ClinContactDurOfCareAct bigint, CodeFind varchar(max), CodeObs varchar(max), CodeProcAndProcStatus varchar(max), FindSchemeInUse varchar(max), MHS202UniqID bigint, MapICD10FindingCode varchar(max), MapICD10FindingDesc varchar(max), MapSnomedCTFindingCode varchar(max), MapSnomedCTFindingTerm varchar(max), MapSnomedCTObsCode varchar(max), MapSnomedCTObsTerm varchar(max), MasterICD10FindingCode varchar(max), MasterICD10FindingDesc varchar(max), MasterSnomedCTFindingCode varchar(max), MasterSnomedCTFindingTerm varchar(max), MasterSnomedCTObsCode varchar(max), MasterSnomedCTObsTerm varchar(max), ObsSchemeInUse varchar(max), ObsValue varchar(max), OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqCareActID varchar(max), UniqCareContID varchar(max), UniqCareProfLocalID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UnitMeasure varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS803CareCluster (
+AMHCareClustCodeFin varchar(max), CAMHNeedsBasedGroupingCode varchar(max), ClustId varchar(max), ClusterDaysRP bigint, ClusterEndRPFlag varchar(5), ClusterOpenEndRPFlag varchar(5), ClusterStartRPFlag varchar(5), EndDateCareClust date, EndTimeCareClust time, FLDCareClustCodeFin varchar(max), FMHCareClustCodeFin varchar(max), InactTimeCC time, LDCareClustCodeFin varchar(max), MHS803UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateCareClust date, StartTimeCareClust time, UniqClustID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS201CareContact (
+ActLocTypeCode varchar(max), AdminCatCode varchar(max), AgeCareContDate bigint, AttendOrDNACode varchar(max), CareContCancelDate date, CareContCancelReas varchar(max), CareContDate date, CareContSubj varchar(max), CareContTime time, CareContactId varchar(max), CareProfTeamLocalId varchar(max), ClinContDurOfCareCont bigint, ConsMediumUsed varchar(max), ConsType varchar(max), ContLocDistanceHome bigint, EarliestClinAppDate date, EarliestReasonOfferDate date, GroupTherapyInd varchar(max), MHS201UniqID bigint, OrgIDComm varchar(max), OrgIDProv varchar(max), PlaceOfSafetyInd varchar(max), RecordNumber bigint, RepApptBookDate date, RepApptOfferDate date, RowNumber bigint, ServiceRequestId varchar(max), SiteIDOfTreat varchar(max), SpecialisedMHServiceCode varchar(max), TimeReferAndCareContact bigint, UniqCareContID varchar(max), UniqCareProfTeamID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS009CarePlanAgreement (
+CarePlanAgreedBy varchar(max), CarePlanAgreedDate date, CarePlanAgreedTime time, CarePlanID varchar(max), MHS009UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, UniqCarePlanID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS008CarePlanType (
+CarePlanCreatDate date, CarePlanCreationTime time, CarePlanID varchar(max), CarePlanImplementDate date, CarePlanLastUpdateDate date, CarePlanLastUpdateTime time, CarePlanTypeMH varchar(max), LocalPatientId varchar(max), MHS008UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, UniqCarePlanID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS701CPACareEpisode (
+CPAEpisodeId varchar(max), EndDateCPA date, LocalPatientId varchar(max), MHS701UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateCPA date, UniqCPAEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS702CPAReview (
+CPAEpisodeId varchar(max), CPARevAbuseQuestAskInd varchar(max), CPAReviewDate date, CareProfLocalId varchar(max), MHS702UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqCPAEpisodeID varchar(max), UniqCareProfLocalID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS802ClusterAssess (
+ClustId varchar(max), CodedAssToolType varchar(max), MHS802UniqID bigint, OrgIDProv varchar(max), PersScore varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, UniqClustID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS801ClusterTool (
+AMHCareClustCodeInit varchar(max), AssToolCompDate date, AssToolCompTime time, ClustCat varchar(max), ClustId varchar(max), ClustToolAssReason varchar(max), FLDCareClustInit varchar(max), LDCareClustInit varchar(max), LocalPatientId varchar(max), MHCareClusterSuperClass varchar(max), MHS801UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqClustID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS607CodedScoreAssessmentAct (
+AgeAssessToolCont bigint, CareActId varchar(max), CodedAssToolType varchar(max), MHS607UniqID bigint, OrgIDProv varchar(max), PersScore varchar(max), RecordNumber bigint, RowNumber bigint, UniqCareActID varchar(max), UniqCareContID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS606CodedScoreAssessmentRefer (
+AgeAssessToolReferCompDate bigint, AssToolCompDate date, CareProfLocalId varchar(max), CodedAssToolType varchar(max), MHS606UniqID bigint, OrgIDProv varchar(max), PersScore varchar(max), RecordNumber bigint, RowNumber bigint, ServiceRequestId varchar(max), UniqCareProfLocalID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS404CommTreatOrder (
+CommTreatOrdEndReason varchar(max), EndDateCommTreatOrd date, ExpiryDateCommTreatOrd date, MHActLegalStatusClassPeriodId varchar(max), MHS404UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateCommTreatOrd date, UniqMHActEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS405CommTreatOrderRecall (
+EndDateCommTreatOrdRecall date, EndTimeCommTreatOrdRecall time, MHActLegalStatusClassPeriodId varchar(max), MHS405UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateCommTreatOrdRecall date, StartTimeCommTreatOrdRecall time, UniqMHActEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS403ConditionalDischarge (
+AbsDischResp varchar(max), CondDischEndReason varchar(max), EndDateMHCondDisch date, MHActLegalStatusClassPeriodId varchar(max), MHS403UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateMHCondDisch date, UniqMHActEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS504DelayedDischarge (
+AttribToIndic varchar(max), BedDaysDDRP bigint, DelayDischReason varchar(max), EndDateDelayDisch date, HospProvSpellNum varchar(max), MHS504UniqID bigint, OrgIDProv varchar(max), OrgIDRespLADelayDisch varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateDelayDisch date, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS007DisabilityType (
+DisabCode varchar(max), DisabImpacPercep varchar(max), LocalPatientId varchar(max), MHS007UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS106DischargePlanAgreement (
+DischPlanAgreedBy varchar(max), DischPlanAgreedDate date, DischPlanAgreedTime time, MHS106UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS004EmpStatus (
+EmployStatus varchar(max), EmployStatusRecDate date, LocalPatientId varchar(max), MHS004UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint, WeekHoursWorked varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS804FiveForensicPathways (
+FFPAssDate date, FFPAssReason varchar(max), FFPCode varchar(max), LocalPatientId varchar(max), MHS804UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS002GP (
+EndDateGMPRegistration date, GMPCodeReg varchar(max), GPDistanceHome bigint, LocalPatientId varchar(max), MHS002UniqID bigint, OrgIDCCGGPPractice varchar(max), OrgIDGPPrac varchar(max), OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateGMPRegistration date, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS301GroupSession (
+ActLocTypeCode varchar(max), CareProfLocalId varchar(max), ClinContDurOfGroupSess bigint, GroupSessDate date, GroupSessId varchar(max), GroupSessType varchar(max), MHS301UniqID bigint, NHSServAgreeLineNum varchar(max), NumberOfGroupSessParticip bigint, OrgIDComm varchar(max), OrgIDProv varchar(max),  RowNumber bigint, ServTeamTypeRefToMH varchar(max), SiteIDOfTreat varchar(max), UniqCareProfLocalID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS000Header (
+DatSetVer varchar(max), DateTimeDatSetCreate time, FileType varchar(max), MHS000UniqID bigint, OrgIDProvider varchar(max), OrgIDSubmit varchar(max), PrimSystemInUse varchar(max), ReportingPeriodEndDate date, ReportingPeriodStartDate date, RowNumber bigint, UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS509HomeLeave (
+EndDateHomeLeave date, EndTimeHomeLeave time, HomeLeaveDaysEndRP bigint, MHS509UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateHomeLeave date, StartTimeHomeLeave time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS501HospProvSpell (
+AdmMethCodeHospProvSpell varchar(max), DischDateHospProvSpell date, DischDestCodeHospProvSpell varchar(max), DischMethCodeHospProvSpell varchar(max), DischTimeHospProvSpell time, EstimatedDischDateHospProvSpell date, HospProvSpellNum varchar(max), InactTimeHPS time, LOSDischHosSpell bigint, LOSHosSpellEoRP bigint, MHS501UniqID bigint, OrgIDProv varchar(max), PlannedDischDateHospProvSpell date, PlannedDischDestCode varchar(max), PostcodeDischDestHospProvSpell varchar(max), PostcodeDistrcitDischDest varchar(max), PostcodeDistrictDischDest varchar(max), PostcodeDistrictMainVisitor varchar(max), PostcodeMainVisitor varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, ServiceRequestId varchar(max), SourceAdmCodeHospProvSpell varchar(max), StartDateHospProvSpell date, StartTimeHospProvSpell time, TimeEstDischDate bigint, TimePlanDischDate bigint, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS512HospSpellComm (
+EndDateOrgCodeComm date, HospProvSpellNum varchar(max), MHS512UniqID bigint, OrgIDComm varchar(max), OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateOrgCodeComm date, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS204IndirectActivity (
+CareProfLocalId varchar(max), CareProfTeamLocalId varchar(max), CodeFind varchar(max), CodeProcAndProcStatus varchar(max), DurationIndirectAct bigint, FindSchemeInUse varchar(max), IndirectActDate date, IndirectActTime time, MHS204UniqID bigint, MapICD10FindingCode varchar(max), MapICD10FindingDesc varchar(max), MapSnomedCTFindingCode varchar(max), MapSnomedCTFindingTerm varchar(max), MasterICD10FindingCode varchar(max), MasterICD10FindingDesc varchar(max), MasterSnomedCTFindingCode varchar(max), MasterSnomedCTFindingTerm varchar(max), OrgIDComm varchar(max), OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, ServiceRequestId varchar(max), UniqCareProfLocalID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS510LeaveOfAbsence (
+EndDateMHLeaveAbs date, EndTimeMHLeaveAbs time, EscortedLeaveIndicator varchar(max), LOADaysRP bigint, MHLeaveAbsEndReason varchar(max), MHS510UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateMHLeaveAbs date, StartTimeMHLeaveAbs time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS001MPI (
+AgeDeath bigint, AgeRepPeriodEnd bigint, AgeRepPeriodStart bigint, CCGGPRes varchar(max), County varchar(max), DefaultPostcode varchar(max), ElectoralWard varchar(max), EthnicCategory varchar(max), Gender varchar(max), IMDQuart varchar(max), LADistrictAuth varchar(max), LDAFlag varchar(5), LSOA2011 varchar(max), LanguageCodePreferred varchar(max), LocalPatientId varchar(max), MHS001UniqID bigint, MaritalStatus varchar(max), NHSDEthnicity varchar(max), NHSNumber bigint, NHSNumberStatus varchar(max), OrgIDCCGRes varchar(max), OrgIDEduEstab varchar(max), OrgIDLocalPatientId varchar(max), OrgIDProv varchar(max), OrgIDResidenceResp varchar(max), PatMRecInRP varchar(5), PersDeathDate date, PersonBirthDate date, Postcode varchar(max), PostcodeDistrict varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS601MedHistPrevDiag (
+DiagDate date, DiagSchemeInUse varchar(max), LocalPatientId varchar(max), MHS601UniqID bigint, MapICD10PrevDiagCode varchar(max), MapICD10PrevDiagDesc varchar(max), MapSnomedCPrevDiagTerm varchar(max), MapSnomedCTPrevDiagCode varchar(max), MasterICD10PrevDiagCode varchar(max), MasterICD10PrevDiagDesc varchar(max), MasterSnomedCTPrevDiagCode varchar(max), MasterSnomedCTPrevDiagTerm varchar(max), OrgIDProv varchar(max), PrevDiag varchar(max), RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS107MedicationPrescription (
+MHS107UniqID bigint, OrgIDProv varchar(max), PrescriptionDate date, PrescriptionID varchar(max), PrescriptionTime time, RecordNumber bigint, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS006MHCareCoOrd (
+CareProfLocalId varchar(max), CareProfServOrTeamTypeAssoc varchar(max), EndDateAssCareCoord date, InactTimeCC time, LocalPatientId varchar(max), MHS006UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateAssCareCoord date, UniqCareProfLocalID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS401MHActPeriod (
+EndDateMHActLegalStatusClass date, EndTimeMHActLegalStatusClass time, ExpiryDateMHActLegalStatusClass date, ExpiryTimeMHActLegalStatusClass time, InactTimeMHAPeriod time, LegalStatusClassPeriodEndReason varchar(max), LegalStatusClassPeriodStartReason varchar(max), LegalStatusCode varchar(max), LocalPatientId varchar(max), MHActLegalStatusClassPeriodId varchar(max), MHS401UniqID bigint, MentalCat varchar(max), NHSDLegalStatus varchar(max), OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateMHActLegalStatusClass date, StartTimeMHActLegalStatusClass time, UniqMHActEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS402RespClinicianAssignment (
+CareProfLocalId varchar(max), EndDateRespClinAssign date, MHActLegalStatusClassPeriodId varchar(max), MHS402UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateRespClinAssign date, UniqCareProfLocalID varchar(max), UniqMHActEpisodeID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS105OnwardReferral (
+DecisionToReferDate date, DecisionToReferTime time, MHS105UniqID bigint, OATReason varchar(max), OnwardReferDate date, OnwardReferReason varchar(max), OnwardReferTime time, OrgIDProv varchar(max), OrgIDReceiving varchar(max), RecordNumber bigint, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS203OtherAttend (
+CareContactId varchar(max), MHS203UniqID bigint, OrgIDProv varchar(max), OtherPersonInAttend varchar(max), RecordNumber bigint, RowNumber bigint, UniqCareContID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS103OtherReasonReferral (
+MHS103UniqID bigint, OrgIDProv varchar(max), OtherReasonReferMH varchar(max), RecordNumber bigint, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS012OverseasVisitorChargCat (
+LocalPatientId varchar(max), MHS012UniqID bigint, OrgIDProv varchar(max), OvsVisChCat varchar(max), OvsVisChCatAppDate date, RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS005PatInd (
+CPP varchar(max), ConstSuperReqDueToDis varchar(max), EmerPsychDate date, ExBAFIndicator varchar(max), LACStatus varchar(max), LocalPatientId varchar(max), MHS005UniqID bigint, ManPsychDate date, OffenceHistory varchar(max), OrgIDProv varchar(max), ParentalResp varchar(max), ProPsychDate date, PsychPrescDate date, PsychTreatDate date, RecordNumber bigint, RowNumber bigint, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint, YoungCarer varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS604PrimDiag (
+DiagDate date, DiagSchemeInUse varchar(max), MHS604UniqID bigint, MapICD10PrimDiagCode varchar(max), MapICD10PrimDiagDesc varchar(max), MapSnomedCPrimDiagTerm varchar(max), MapSnomedCTPrimDiagCode varchar(max), MasterICD10PrimDiagCode varchar(max), MasterICD10PrimDiagDesc varchar(max), MasterSnomedCTPrimDiagCode varchar(max), MasterSnomedCTPrimDiagTerm varchar(max), OrgIDProv varchar(max), PrimDiag varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS603ProvDiag (
+DiagSchemeInUse varchar(max), MHS603UniqID bigint, MapICD10ProvDiagCode varchar(max), MapICD10ProvDiagDesc varchar(max), MapSnomedCTPrimDiagCode varchar(max), MapSnomedCTProvDiagCode varchar(max), MapSnomedCTProvDiagTerm varchar(max), MasterICD10ProvDiagCode varchar(max), MasterICD10ProvDiagDesc varchar(max), MasterSnomedCTProvDiagCode varchar(max), MasterSnomedCTProvDiagTerm varchar(max), OrgIDProv varchar(max), ProvDiag varchar(max), ProvDiagDate date, RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS101Referral (
+AMHServiceRefEndRP varchar(5), AgeServReferDischDate bigint, AgeServReferRecDate bigint, CYPServiceRefEndRP varchar(5), CYPServiceRefStartRP varchar(5), ClinRespPriorityType varchar(max), DischLetterIssDate date, DischPlanCreationDate date, DischPlanCreationTime time, DischPlanLastUpdatedDate date, DischPlanLastUpdatedTime time, InactTimeRef time, LDAServiceRefEndRP varchar(5), LocalPatientId varchar(max), MHS101UniqID bigint, NHSServAgreeLineNum varchar(max), OrgIDComm varchar(max), OrgIDProv varchar(max), OrgIDReferring varchar(max), PrimReasonReferralMH varchar(max),  ReasonOAT varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, ReferralRequestReceivedDate date, ReferralRequestReceivedTime time, ReferringCareProfessionalStaffGroup varchar(max), RowNumber bigint, ServDischDate date, ServDischTime time, ServiceRequestId varchar(max), SourceOfReferralMH varchar(max), SpecialisedMHServiceCode varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS104RTT (
+AgeReferTreatEndDate bigint, AgeReferTreatStartDate bigint, MHS104UniqID bigint, OrgIDPatPathIdIssuer varchar(max), OrgIDProv varchar(max), PatPathId varchar(max), RecordNumber bigint, ReferToTreatPeriodEndDate date, ReferToTreatPeriodStartDate date, ReferToTreatPeriodStatus varchar(max), RowNumber bigint, ServiceRequestId varchar(max), TimeReferStartAndEndDate varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, WaitTimeMeasureType varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS505RestrictiveIntervention (
+EndDateRestrictiveInt date, EndTimeRestrictiveInt time, MHS505UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RestraintInjuryCarePers varchar(max), RestraintInjuryOtherPers varchar(max), RestraintInjuryPatient varchar(max), RestrictiveIntPIReviewHeldCarePers varchar(max), RestrictiveIntPIReviewHeldPat varchar(max), RestrictiveIntPIReviewNotHeldReasPat varchar(max), RestrictiveIntType varchar(max), RowNumber bigint, StartDateRestrictiveInt date, StartTimeRestrictiveInt time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS605SecDiag (
+DiagDate date, DiagSchemeInUse varchar(max), MHS605UniqID bigint, MapICD10SecDiagCode varchar(max), MapICD10SecDiagDesc varchar(max), MapSnomedCSecDiagTerm varchar(max), MapSnomedCTSecDiagCode varchar(max), MasterICD10SecDiagCode varchar(max), MasterICD10SecDiagDesc varchar(max), MasterSnomedCTSecDiagCode varchar(max), MasterSnomedCTSecDiagTerm varchar(max), OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, SecDiag varchar(max), ServiceRequestId varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqRecSecDiag varchar(max), UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS507SelfHarm (
+DateSelfHarm date, MHS507UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS102ServiceTypeReferredTo (
+AgeServReferClosure bigint, AgeServReferRejection bigint, CAMHSTier varchar(max), CareProfTeamLocalId varchar(max), InactTimeST time, MHS102UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, ReferClosReason varchar(max), ReferClosureDate date, ReferClosureTime time, ReferRejectReason varchar(max), ReferRejectionDate date, ReferRejectionTime time, RowNumber bigint, ServTeamTypeRefToMH varchar(max), ServiceRequestId varchar(max), UniqCareProfTeamID varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS011SocPerCircumstances (
+LocalPatientId varchar(max), MHS011UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, SocPerCircumstance varchar(max), SocPerCircumstanceRecDate date, UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS901StaffDetails (
+CareProfJobRoleCode varchar(max), CareProfLocalId varchar(max), CareProfStaffGpMH varchar(max), MHS901UniqID bigint, MainSpecCodeMH varchar(max), OccCode varchar(max), OrgIDProv varchar(max), ProfRegBodyCode varchar(max), ProfRegEntryId varchar(max), RowNumber bigint, UniqCareProfLocalID varchar(max), UniqMonthID bigint, UniqSubmissionID bigint
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS513SubstanceMisuse (
+MHS513UniqID bigint, OrgIDProv varchar(max), RecordNumber bigint, RowNumber bigint, SubstanceMisuse date, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS514TrialLeave (
+EndDateMHTrialLeave date, EndTimeMHTrialLeave time, MHS514UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, StartDateMHTrialLeave date, StartTimeMHTrialLeave time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardStayId varchar(max)
+) ON [PRIMARY]
+CREATE TABLE mhsds.MHS502WardStay (
+AMHServiceWSDischarge varchar(5), AMHServiceWSEndRP varchar(5), BedDaysWSEndRP bigint, BedTypeAdultDischarge varchar(max), BedTypeAdultEndRP varchar(max), CYPServiceWSDischarge varchar(5), CYPServiceWSEndRP varchar(5), CYPWardTypeStartRP varchar(5), EndDateMHTrialLeave date, EndDateWardStay date, EndTimeWardStay time, HospProvSpellNum varchar(max), HospitalBedTypeMH varchar(max), InactTimeWS time, IntendClinCareIntenCodeMH varchar(max), LDAServiceWSDischarge varchar(5), LDAServiceWSEndRP varchar(5), LockedWardInd varchar(max), MHS502UniqID bigint, OrgIDProv varchar(max), RecordEndDate date, RecordNumber bigint, RecordStartDate date, RowNumber bigint, SiteIDOfTreat varchar(max), SpecialisedMHServiceCode varchar(max), StartDateWardStay date, StartTimeWardStay time, UniqHospProvSpellNum varchar(max), UniqMHSDSPersID varchar(max), UniqMonthID bigint, UniqServReqID varchar(max), UniqSubmissionID bigint, UniqWardStayID varchar(max), WardAge varchar(max), WardCode varchar(max), WardLocDistanceHome bigint, WardSecLevel varchar(max), WardSexTypeCode varchar(max), WardStayId varchar(max), WardType varchar(max)
+) ON [PRIMARY]
